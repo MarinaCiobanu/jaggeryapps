@@ -9840,7 +9840,7 @@ a.list-group-item:hover {
  * Login
  * ================================================================== */
 .data-container {
-  border-left: 3px solid #E38E4A;
+  border-left: 3px solid #C00;
   border-right: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
   border-top: 1px solid #E2E2E2;
@@ -9860,8 +9860,8 @@ a.list-group-item:hover {
 
 .data-container .btn-primary {
   color: #ffffff;
-  background-color: #F27B21;
-  border: 1px solid #F27B21;
+  background-color: #C00;
+  border: 1px solid #C00;
 }
 
 .data-container .btn-secondary {

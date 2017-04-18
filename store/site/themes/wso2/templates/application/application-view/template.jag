@@ -2,6 +2,8 @@
  var application = outputs.application;
  var oauthapp = outputs.oauthapp;
  jagg.log(outputs.tiers);
+ var user=outputs.user;
+ 	print(user);
 
 var app_tier;
 for(var i=0;i < outputs.tiers.length; i++){

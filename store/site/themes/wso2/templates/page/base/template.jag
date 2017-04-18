@@ -72,10 +72,17 @@
 <% jagg.includeBlock("ui/dialogs", {}); %>
 
     <!-- footer -->
-    <footer class="footer">
+    <!--footer class="footer">
       <div class="container-fluid">
-        <p>WSO2 API Manager 2.1.0 | &copy; <script>document.write(new Date().getFullYear());</script> <a title="WSO2" href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>.</p>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a title="Protel" href="http://www.protel.net/" target="_blank"><i class=""></i> | protel hotelsoftware GmbH. All rights reserved</a>.</p>
       </div>
+    </footer-->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <a href="http://www.protel.net"><img src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("dist/img/logo_protel.png"))%>" class="img-responsive protelLogo-small"></a>
+      </div>
+    
+      <b>Version</b> 1.1.0
     </footer>
     
 <%

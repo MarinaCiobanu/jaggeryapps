@@ -1,0 +1,141 @@
+/*===========================================================*/
+    .margin-right {
+      margin-right: 10px;
+    }
+    .margin-right-small {
+      margin-right: 5px;
+    }    
+    .margin-left {
+      margin-left: 10px;
+    }
+    .margin-left-small {
+      margin-left: 5px;
+    }        
+    .nav-tabs-custom>.nav-tabs>li.active {
+      font-weight: bold;
+    }
+    .margin-vertical-small {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }     
+/*LOGOs*/
+    .protel-logo-top {
+      display: block;
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      width: 230px;
+      padding-right: 15px;
+      padding-top: 5px;
+      overflow: hidden;
+    }
+    .protelLogo-small {
+      max-height: 40px;
+    }
+    .protelLogo-top {
+     // margin-top: 5px;
+    }
+    .protelLogo-top-s {
+      margin-top: 5px;
+      max-width: 40px;
+    }
+/*protel header*/
+
+    .protel-credentials {
+      position: relative;
+      margin-top: 20px;
+    }
+    .protel-io-navbar{
+      margin-left: 0px!important;
+    }
+    .main-header .sidebar-toggle {
+      padding: 15px 19px 15px 20px!important;
+    }
+    .protel-io-navbar h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 18px;
+      float: left;
+      padding:15px; 
+    }
+
+/*Sidebar vertical*/
+.main-sidebar, .left-side {
+  padding-top: 100px!important;
+}
+.protel-tags-container {
+  padding: 0px 25px 10px 15px;
+}
+.sidebar-mini.sidebar-collapse .main-sidebar .protel-tags-container {
+  display: none;
+}
+
+/*Typography */
+.protel-txtGrey{
+  color:#495b60;
+}
+.protel-txtLightGrey{
+  color: #c0d5dc;
+  } 
+  a.protel-lk {
+    color: #e40421;
+    text-decoration:underline;
+  }
+  a.protel-lk:hover {
+    color: #d6081b;
+    text-decoration:underline;
+  }
+  .protel-menu-lk{
+    font-weight: bold;
+  }
+  a.protel-lk-white {
+    color: #FFFFFF;
+    text-decoration:none;
+  }
+  a.protel-lk-white:hover {
+    color: #FFFFFF;
+    text-decoration:underline;
+  }
+.bold { font-weight: bold; }
+/*Cursors*/
+ .cursor-pointer { cursor: pointer; }
+ .cursor-help { cursor: help;}
+
+
+.callout-protel {
+    border-color: #d6081b!important;
+    background-color: #FFFFFF!important;
+   
+  }
+.callout.callout-protel  .form-group {margin-bottom: 0;}
+
+/*API Code*/
+.zero-clipboard {
+  display: block;
+  position: relative;
+}
+.zero-clipboard+.highlight{
+    margin-top: -16px;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin: -15px -15px 15px;
+    border-radius: 0;
+}
+/*Footer*/
+.main-footer.footer-pagewidth {
+  margin-left: 0px;
+  padding: 20px;
+}
+/*Log in/Register*/
+.protelio .modal-backdrop {
+  z-index: 1020;
+}
+.protelio .register-box-body {
+  height: auto;
+}
+.protelio #loginModal .checkbox {
+  margin-left: 20px;
+}

@@ -1,0 +1,13 @@
+<% jagg.template("about", function(inputs, outputs, jagg) { 
+	var user=outputs.user;
+	print(user);
+	%>
+
+<p>About protel.io Service Marketplace
+			This page is an example of content page, left menu category. Please fill in the data where needed.
+			I am a link
+
+			This page is about the protel.io and about the protel company
+
+			For more UI elements visit link</p>
+<% }); %>

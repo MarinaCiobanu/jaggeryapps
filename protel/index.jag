@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Protel</title>
+
+	<link rel="stylesheet" href="css2/skel.css" />
+	<link rel="stylesheet" href="css2/style.css" />
+	<link rel="stylesheet" href="css2/style-wide.css" />
+	<link rel="stylesheet" href="css2/style-noscript.css" />
+
+<body class="index">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1 id="logo"><a href="index.html">Protel</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="../store/site/pages/login.jag" class="button special">Store API</a></li>
+						
+						<li><a href="../publisher/site/pages/login.jag" class="button special">Publisher API</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+
+				<div class="inner">
+					<header>
+						<h2>Protel</h2>
+					</header>
+					<p>
+						<a href="#"><img src="images/logo_protel.png" title="value" /> </a>
+					</p>
+					<footer>
+						<ul class="buttons vertical">
+							<li><a href="#main" class="button fit scrolly">Demo</a></li>
+						</ul>
+					</footer>
+				</div>
+
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="copyright">	
+					<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a title="Protel" href="http://www.protel.net/" target="_blank"><i class=""></i> | protel hotelsoftware GmbH. All rights reserved</a>.</p>
+				</ul>
+			</footer>
+
+	</body>
+
+<%
+
+%>
+
+</html>
+
+

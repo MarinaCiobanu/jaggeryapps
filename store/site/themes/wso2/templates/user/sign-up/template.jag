@@ -23,7 +23,7 @@
                         <div class="brand-container add-margin-bottom-5x">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3 col-md-9 col-lg-9 center-block float-remove-sm float-remove-xs pull-right-md pull-right-lg">
-                                    <img class="img-responsive brand-spacer" alt="store_logo" src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("images/logo-white.png"))%>">
+                                    <img class="img-responsive brand-spacer" alt="store_logo" src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("images/logo_protel.png"))%>">
                                 </div>
                             </div>
                             <h2 class="text-center-sm text-center-xs text-center-md text-right">API Store</h2>
@@ -37,7 +37,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                         <label class="control-label"><%=i18n.localize("Username")%> *</label>
                                         <div class="input-group input-wrap">
-                                            <input id="newUsername" name="newUsername" title="<%=i18n.localize("Please enter at lease 5 characters")%>" minlength="5" maxlength="30" type="text" class="required validName noSpace form-control" placeholder="e.g JohnDoe">
+                                            <input id="newUsername" name="newUsername" title="<%=i18n.localize("Please enter at lease 5 characters")%>" minlength="5" maxlength="30" type="text" class="required validName noSpace form-control" placeholder="e.g john.doe@mail.com">
                                         </div>
 
             							<input id="hiddenTenantDomain" type="hidden" value="<%=request_tenant%>"> 
@@ -95,38 +95,66 @@
                                             <div class="input-group input-wrap">
 						                        <% if(field.name == "Email") {%>
                                                     <input type="text" id="<%=i%>cliamUri" name="<%=i18n.localize("Please enter a valid email.")%>" class="<%=inputClass%> form-control">
-                                                <%} else {%>
+                                                <%} else if(field.name == "Country"){%>
+                                                    
+                                              <div class="input-group input-wrap">
+                                        <%
+                                            var json = require("countries.json");
+                                        
+                                        %>
+                                            <select id="<%=i%>cliamUri" name="<%=i%>cliamUri" class="<%=inputClass%> form-control">
+                                            <option selected disabled>Choose here</option>
+                                            <%
+                                                for (var i in json.countries){
+                                            %>
+                                                <option value="<%=json.countries[i].Name%>"><%=json.countries[i].Name%></option>
+                                            <%
+                                                }
+                                           
+                                            %>
+                                            </select>
+                                        </div>
+
+                                                         <%} else {%>
                                                     <input type="text" id="<%=i%>cliamUri" name="<%=i%>cliamUri" class="<%=inputClass%> form-control">
                                                 <%}%>
+ 
                                             </div>
                                         </div>
                                     </div>
+
+                                    
+
 								 <%} %>
 							    <% } %>
+
+                                
+
+
                                 <a class="add-margin-bottom-4x sign-up-additional" title="<%= i18n.localize("View Additional Details")%>"><%= i18n.localize("View Additional Details")%></a>
                                 
                                 <div class="extended-form"> 
                                 
-                                	<%		
-									for(i = 0; i < length; i++) {
-							            		field = fields[i];
-							            		var required = field.required;
-							            		var claimUri = field.claimUri;
-										if(field.name == "Home Phone" || field.name == "Telephone") {
-											field.name = "Land Phone";
-										} else if (field.name == "Mobile") {
-											field.name = "Mobile Phone";
-										}
-										if (claimUri.indexOf("address") !== -1) {
-											inputClass = "input-address";
-							            		} else if (claimUri.indexOf("country") !== -1) {
-											inputClass = "input-medium";
-								    		} else if (claimUri.indexOf("role") !== -1) {
-											inputClass = "input-small";
-								    		} else {
-											inputClass = "input-large";
-										}
-									%>
+                                	<%     
+                                    for(i = 0; i < length; i++) {
+                                                field = fields[i];
+                                                var required = field.required;
+                                                var claimUri = field.claimUri;
+                                        if(field.name == "Home Phone" || field.name == "Telephone") {
+                                            field.name = "Land Phone";
+                                        } else if (field.name == "Mobile") {
+                                            field.name = "Mobile Phone";
+                                        }
+                                        if (claimUri.indexOf("address") !== -1) {
+                                            inputClass = "input-address";
+                                                } else if (claimUri.indexOf("country") !== -1) {
+                                            inputClass = "input-medium";
+                                            } else if (claimUri.indexOf("role") !== -1) {
+                                            inputClass = "input-small";
+                                            } else {
+                                            inputClass = "input-large";
+                                        }
+                                    %>
 										<%if (required != true) {%>
 											<div class="form-group">
 		                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">

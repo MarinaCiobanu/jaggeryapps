@@ -1,5 +1,7 @@
 <% jagg.template("billing", function(inputs, outputs, jagg) {
-var usage=outputs.usage;var length;if (usage!=null){length=outputs.usage.length;}
+var usage=outputs.usage;
+var length;
+if (usage!=null){length=outputs.usage.length;}
 
 %>
 <div class="title-section">

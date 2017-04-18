@@ -1,4 +1,5 @@
-<% jagg.template("application/application-list", function(inputs, outputs, jagg) { %>
+<% jagg.template("application/application-list", function(inputs, outputs, jagg) {  var user=outputs.user;
+ 	print(user);%>
 <div class="page-header" id="Message">
     <h2><%=i18n.localize("Applications")%></h2>
 </div>
